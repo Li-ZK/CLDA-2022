@@ -1,4 +1,5 @@
 ## Confident Learning-Based Domain Adaptation for Hyperspectral Image Classification
+January 2022 IEEE Transactions on Geoscience and Remote Sensing 60:1-1 Follow journal DOI: 10.1109/TGRS.2022.3166817
 This is a code demo for the paper "Confident Learning-Based Domain Adaptation for Hyperspectral Image Classification"
 
 Some of our code references the projects
