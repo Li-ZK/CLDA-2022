@@ -293,7 +293,7 @@ def clean_sampling_epoch(labels, probabilities):
     target_labels = []
     for i in range(len(true_labels_idx)):
         target_datas.append(testX[true_labels_idx[i]])
-        target_labels.append(testY[true_labels_idx[i]])
+        target_labels.append(labels[true_labels_idx[i]])
     target_datas = np.array(target_datas)
     target_labels = np.array(target_labels)
 
