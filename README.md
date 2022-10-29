@@ -17,6 +17,8 @@ sklearn = 0.23.2
 
 numpy = 1.19.2
 
+cleanlab = 1.0
+
 ## dataset
 
 You can download the hyperspectral datasets in mat format at: https://pan.baidu.com/s/14pqanFPK3JQhDIxrjzSn3g?pwd=l3wf, and move the files to `./datasets` folder.
