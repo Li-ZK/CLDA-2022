@@ -347,7 +347,7 @@ for iDataSet in range(nDataSet):
 
 
 
-    train_num = 200
+    train_num = 20
 
     class_weights = None
     for ep in range(1,num_epoch + 1):

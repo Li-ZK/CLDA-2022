@@ -42,17 +42,12 @@ def cubeData(file_path):
 
     print(total.keys())
 
-    Data_Band_Scaler_s = data1
-    Data_Band_Scaler_t = data2
-
-
-
-    # data_s = data1.reshape(np.prod(data1.shape[:2]), np.prod(data1.shape[2:]))  # (111104,204)
-    # data_scaler_s = preprocessing.scale(data_s)  #标准化 (X-X_mean)/X_std,
-    # Data_Band_Scaler_s = data_scaler_s.reshape(data1.shape[0], data1.shape[1],data1.shape[2])
-    # data_t = data2.reshape(np.prod(data2.shape[:2]), np.prod(data2.shape[2:]))  # (111104,204)
-    # data_scaler_t = preprocessing.scale(data_t)  #标准化 (X-X_mean)/X_std,
-    # Data_Band_Scaler_t = data_scaler_t.reshape(data2.shape[0], data2.shape[1],data2.shape[2])
+    data_s = data1.reshape(np.prod(data1.shape[:2]), np.prod(data1.shape[2:]))  # (111104,204)
+    data_scaler_s = preprocessing.scale(data_s)  #标准化 (X-X_mean)/X_std,
+    Data_Band_Scaler_s = data_scaler_s.reshape(data1.shape[0], data1.shape[1],data1.shape[2])
+    data_t = data2.reshape(np.prod(data2.shape[:2]), np.prod(data2.shape[2:]))  # (111104,204)
+    data_scaler_t = preprocessing.scale(data_t)  #标准化 (X-X_mean)/X_std,
+    Data_Band_Scaler_t = data_scaler_t.reshape(data2.shape[0], data2.shape[1],data2.shape[2])
 
     return Data_Band_Scaler_s,Data_Band_Scaler_t, gt1,gt2
 
